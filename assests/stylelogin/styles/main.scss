@@ -1,0 +1,186 @@
+// normalize
+* {
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+// / normalize
+// font ulash
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff"),
+    url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.eot");
+  src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto-Bold.woff") format("woff"),
+    url("../fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+// /font ulash
+
+// inputs-section
+.input-inner {
+  display: flex;
+  align-items: center;
+  gap: 130px;
+}
+.input__left {
+  width: 50%;
+  img {
+    height: 100vh;
+  }
+}
+
+.input__right {
+  h3 {
+    color: #2d3748;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  h1 {
+    color: #1a202c;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  .email,
+  .password {
+    display: block;
+    color: #4a5568;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 11px;
+  }
+  #email {
+    display: block;
+    padding: 20px;
+    width: 300px;
+    padding-right: 45px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    margin-bottom: 11px;
+    color: #2d3748;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    outline: none;
+  }
+  #password {
+    display: block;
+    color: black;
+    font-size: 14px;
+    width: 300px;
+    padding: 20px;
+    padding-right: 45px;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    margin-bottom: 28px;
+    outline: none;
+  }
+  .passwordSection {
+    position: relative;
+  }
+  .password-eye {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    margin-right: 11px;
+  }
+  .radio-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    .radio {
+      display: flex;
+      align-items: center;
+    }
+    a {
+      color: #2c5282;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+  .forms button {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background: #04c35c;
+    border: none;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  .sign-in {
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #2d3748;
+    span {
+      color: #fff;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 700;
+      margin-left: 11px;
+    }
+  }
+  .bottom {
+    margin-left: 23px;
+    a {
+      color: #616161;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      span {
+        font-family: Roboto;
+        font-weight: 400;
+        color: #2b6cb0;
+      }
+    }
+  }
+  input::placeholder {
+    color: #2d3748;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.success {
+  border: 2px solid green !important;
+}
+.error {
+  border: 2px solid red !important;
+}

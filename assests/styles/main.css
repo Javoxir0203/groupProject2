@@ -1,0 +1,328 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Light.eot");
+  src: url("../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.eot");
+  src: url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.d-none {
+  display: none;
+}
+
+.btn {
+  border: none;
+}
+
+header {
+  background: #fff;
+  box-shadow: 0px -1px 0px 0px #c4cdd5 inset;
+  margin-bottom: 30px;
+}
+header .header__top {
+  background-color: #454f5b;
+  padding: 9px 0;
+}
+header .header__top .header__top-inner {
+  display: flex;
+  justify-content: space-between;
+}
+header .header__top .header__top-inner p {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 1.92px;
+}
+header .header__top .header__top-inner a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 1.92px;
+  text-decoration-line: underline;
+}
+header .header__bottom .header__bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+header .header__bottom .header__bottom-inner ul {
+  display: flex;
+  gap: 32px;
+}
+header .header__bottom .header__bottom-inner ul li a {
+  color: #161c24;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: normal;
+}
+header .header__bottom .header__bottom-inner ul li a:hover {
+  opacity: 0.6;
+}
+header .header__bottom .header__bottom-inner .right {
+  display: flex;
+  align-items: center;
+}
+header .header__bottom .header__bottom-inner .right div {
+  display: flex;
+  align-items: center;
+}
+header .header__bottom .header__bottom-inner .right div a {
+  color: #454f5b;
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+header .header__bottom .header__bottom-inner .right .heartIcon {
+  cursor: pointer;
+  margin-right: 5px;
+}
+header .header__bottom .header__bottom-inner .right .buyIcon {
+  cursor: pointer;
+  margin-right: 10px;
+}
+header .header__bottom .header__bottom-inner .right .logOut {
+  cursor: pointer;
+}
+header .header__bottom .header__bottom-inner .right .logOut:hover {
+  opacity: 0.5;
+}
+
+main .cards h2 {
+  color: #000;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+  margin-bottom: 30px;
+}
+main .cards .cards-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+main .cards .cards-inner .card {
+  cursor: pointer;
+  position: relative;
+  width: 288px;
+  margin-bottom: 20px;
+  background: #fff;
+  box-shadow: -1px 0px 0px 0px #eaeaea inset, 1px 0px 0px 0px #eaeaea inset, 0px -1px 0px 0px #eaeaea inset;
+  padding-bottom: 10px;
+}
+main .cards .cards-inner .card button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  outline: none;
+  background: #fff;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.03);
+  padding: 8px 10px;
+  color: #161c24;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+main .cards .cards-inner .card .mainPhoto {
+  margin-bottom: 10px;
+}
+main .cards .cards-inner .card .rating {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 5px;
+}
+main .cards .cards-inner .card .rating span {
+  margin-left: 10px;
+}
+main .cards .cards-inner .card p {
+  width: 288px;
+  color: #454f5b;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+main .cards .cards-inner .card .newPrice {
+  margin-left: 10px;
+  color: #161c24;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 12px;
+}
+main .cards .cards-inner .card .oldPrice {
+  color: #454f5b;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: line-through;
+}
+
+.about-section .about .about-inner {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.about-section .about .about-inner h2 {
+  color: #161c24;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 62px;
+  margin-bottom: 20px;
+}
+.about-section .about .about-inner p,
+.about-section .about .about-inner .title {
+  width: 287px;
+  color: #454f5b;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.about-section .about .about-inner .title {
+  display: block;
+  margin-bottom: 30px;
+}
+.about-section .about .about-inner .price h3 {
+  color: #454f5b;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.about-section .about .about-inner .price .newPrice {
+  color: #161c24;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 12px;
+}
+.about-section .about .about-inner .price .oldPrice {
+  color: #a4a4a4;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration: line-through;
+}
+.about-section .about .about-inner .price .korzinka {
+  margin-top: 20px;
+  width: 220px;
+  height: 50px;
+  background-color: rgb(66, 149, 228);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.about-section .about .about-inner .price .korzinka:hover {
+  background-color: rgba(66, 149, 228, 0.8);
+}
+
+.confirmation-section {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.confirmation-section .confirmation {
+  width: 500px;
+  height: 120px;
+  background-color: #fff;
+  padding: 20px;
+}
+.confirmation-section .confirmation div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.confirmation-section .confirmation div:first-child {
+  margin-bottom: 20px;
+}
+.confirmation-section .confirmation div:first-child .closeBtn:hover {
+  background-color: red;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+}
+.confirmation-section .confirmation div:first-child .closeBtn {
+  padding: 5px;
+}
+.confirmation-section .confirmation div:nth-child(2) {
+  justify-content: center;
+  gap: 50px;
+}
+.confirmation-section .confirmation div:nth-child(2) button {
+  border: none;
+  font-size: 20px;
+}
+.confirmation-section .confirmation div:nth-child(2) .yesBtn {
+  background-color: greenyellow;
+  padding: 7px;
+  border-radius: 5px;
+  color: #817d7d;
+  cursor: pointer;
+}
+.confirmation-section .confirmation div:nth-child(2) .noBtn {
+  background-color: red;
+  padding: 7px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=main.css.map */

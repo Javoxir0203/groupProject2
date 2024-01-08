@@ -1,0 +1,212 @@
+@import "./fonts";
+@import "./normalize";
+@import "./header";
+
+main {
+  .cards {
+    h2 {
+      color: #000;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 42px;
+      margin-bottom: 30px;
+    }
+    .cards-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      .card {
+        cursor: pointer;
+        position: relative;
+        width: 288px;
+        margin-bottom: 20px;
+        background: #fff;
+        box-shadow: -1px 0px 0px 0px #eaeaea inset,
+          1px 0px 0px 0px #eaeaea inset, 0px -1px 0px 0px #eaeaea inset;
+        padding-bottom: 10px;
+        button {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          border: none;
+          outline: none;
+          background: #fff;
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.03);
+          padding: 8px 10px;
+          color: #161c24;
+          font-size: 12px;
+          font-weight: 500;
+          cursor: pointer;
+        }
+        .mainPhoto {
+          margin-bottom: 10px;
+        }
+        .rating {
+          margin-left: 10px;
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          gap: 5px;
+          span {
+            margin-left: 10px;
+          }
+        }
+        p {
+          width: 288px;
+          color: #454f5b;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+          margin-bottom: 10px;
+          margin-left: 10px;
+        }
+        .newPrice {
+          margin-left: 10px;
+          color: #161c24;
+          font-size: 20px;
+          font-weight: 600;
+          margin-right: 12px;
+        }
+        .oldPrice {
+          color: #454f5b;
+          font-size: 18px;
+          font-weight: 300;
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+}
+
+// about section
+.about-section {
+  .about {
+    .about-inner {
+      display: flex;
+      align-items: center;
+      gap: 100px;
+      h2 {
+        color: #161c24;
+        font-size: 44px;
+        font-weight: 600;
+        line-height: 62px;
+        margin-bottom: 20px;
+      }
+      p,
+      .title {
+        width: 287px;
+        color: #454f5b;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 16px;
+      }
+      .title {
+        display: block;
+        margin-bottom: 30px;
+      }
+      .price {
+        h3 {
+          color: #454f5b;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 22px;
+        }
+        .newPrice {
+          color: #161c24;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: normal;
+          margin-right: 12px;
+        }
+        .oldPrice {
+          color: #a4a4a4;
+          font-size: 22px;
+          font-weight: 300;
+          line-height: normal;
+          text-decoration: line-through;
+        }
+        .korzinka {
+          margin-top: 20px;
+          width: 220px;
+          height: 50px;
+          background-color: rgba(66, 149, 228, 1);
+          color: #fff;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          &:hover {
+            background-color: rgba(66, 149, 228, 0.8);
+          }
+        }
+      }
+    }
+  }
+}
+
+// confirmation section
+.confirmation-section {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  .confirmation {
+    width: 500px;
+    height: 120px;
+    background-color: #fff;
+    padding: 20px;
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    div:first-child {
+      margin-bottom: 20px;
+      .closeBtn:hover {
+        background-color: red;
+        cursor: pointer;
+        color: white;
+        border-radius: 5px;
+      }
+      .closeBtn {
+        padding: 5px;
+      }
+    }
+    div:nth-child(2) {
+      justify-content: center;
+      gap: 50px;
+      button {
+        border: none;
+        font-size: 20px;
+      }
+      .yesBtn {
+        background-color: greenyellow;
+        padding: 7px;
+        border-radius: 5px;
+        color: #817d7d;
+        cursor: pointer;
+      }
+      .noBtn {
+        background-color: red;
+        padding: 7px;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
