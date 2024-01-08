@@ -210,3 +210,230 @@ main {
 .hidden {
   display: none;
 }
+
+//  Javoxir section
+
+.prices {
+  text-decoration: line-through;
+  opacity: 0.3;
+  margin-left: 10px;
+}
+
+.section__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.section__top__icon {
+  margin-left: 20px;
+}
+.section__card {
+  margin-top: 20px;
+  color: #454f5b;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.section__card__title {
+  margin-top: 15px;
+  color:  #161C24;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+}
+.section-cards {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section__child {
+  display: flex;
+  gap: 30px;
+}
+.section__img {
+  margin-top: 119px;
+}
+.section__img__titel {
+  color: #161c24;
+  width: 605px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+}
+.ection__img__subtitel {
+  color: #454f5b;
+  width: 605px;
+  font-size: 18px;
+  line-height: 32px;
+}
+.section__imgs {
+  display: flex;
+  gap: 10px;
+}
+.card__text {
+  margin-top: 20px;
+}
+.section__item {
+  display: flex;
+  gap: 20px;
+}
+.section__childs {
+  display: flex;
+  gap: 30px;
+  margin-top: 82px;
+}
+.section__childs__item {
+  width: 605px;
+  height: 564px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.04) 0%,
+      rgba(0, 0, 0, 0.04) 100%
+    ),
+    url(<path-to-image>),
+    lightgray -116.386px -47.418px / 96.482% 122.08% no-repeat;
+}
+.section__children {
+  margin-top: 129px;
+}
+.section__children__titel {
+  width: 605px;
+  color: #161c24;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+}
+.section__children__subtitel {
+  width: 605px;
+  color: #454f5b;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.section__input {
+  background: #f2f8ff;
+  padding: 55px 0;
+  margin-top: 100px;
+}
+.section__inner h2 {
+  color: #161c24;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 62px;
+}
+.section__inner p {
+  margin-top: 30px;
+  color: #454f5b;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.section__inputs {
+  margin-top: 50px;
+  text-align: center;
+  gap: 20px;
+}
+.section__input__child {
+  width: 240px;
+  height: 50px;
+  padding-left: 10px;
+  border: none;
+  background: rgba(22, 28, 36, 0.04);
+  color: #454f5b;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.section__input__childs {
+  background: var(--Main, #4295e4);
+  width: 220px;
+  height: 50px;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.footer {
+  background-color: #0d2436;
+}
+.footer-inner {
+  padding: 55px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+.footer__right {
+  display: flex;
+  gap: 30px;
+}
+.footer__right ul li a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+}
+.footer__right ul li {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.footer__right ul li span {
+  display: block;
+  color: #c4cdd5;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-decoration: none;
+  opacity: 1;
+}
+.footer__left .footer-logo {
+  display: block;
+  margin-bottom: 135px;
+}
+.footer__left .social-media {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer__right ul li {
+  margin-bottom: 16px;
+}
+.footer__right ul li:nth-child(1) {
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+
+.list2 li:nth-child(2) a,
+li:nth-child(3) a {
+  display: block;
+  margin-bottom: 10px;
+}
+.list3 li address a {
+  display: block;
+  width: 182px;
+}
+.footer .footer-title {
+  margin: 0;
+  text-align: center;
+  padding: 20px 0;
+  opacity: 0.6;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+.section__child__img {
+  width: 525px;
+  height: 484px;
+}
